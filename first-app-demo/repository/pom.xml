@@ -11,7 +11,7 @@
 	<artifactId>repository</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>first-repository-demo</name>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 	<description>repository Demo project for Spring Boot</description>
 
 	<dependencies>

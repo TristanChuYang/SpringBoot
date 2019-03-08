@@ -10,16 +10,34 @@
 	<groupId>com.chuyang.springboot</groupId>
 	<artifactId>web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>first-repository-web</name>
-    <packaging>pom</packaging>
+	<name>first-web-demo</name>
+    <packaging>jar</packaging>
 	<description>web Demo project for Spring Boot</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.chuyang.springboot</groupId>
+			<artifactId>domain</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>com.chuyang.springboot</groupId>
 			<artifactId>repository</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.chuyang.springboot.firstdemo.FirstModuleApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
