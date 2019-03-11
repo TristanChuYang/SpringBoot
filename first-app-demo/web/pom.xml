@@ -35,6 +35,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>com.chuyang.springboot.firstdemo.FirstModuleApplication</mainClass>
+					<!-- 支持热部署必须的配置 -->
+					<fork>true</fork>
 				</configuration>
 			</plugin>
 		</plugins>
